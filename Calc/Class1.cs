@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 
-namespace Calc
+namespace KAICalc
 {
-    public class Class1
+    public class Calc
     {
         public int Sum(string s)
         {
