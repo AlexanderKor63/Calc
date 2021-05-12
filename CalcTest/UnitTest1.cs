@@ -9,7 +9,13 @@ namespace Tests
         public void Setup()
         {
         }
-
+        [Test]
+        public void SumTest0()
+        {
+            Calc calc = new Calc();
+            int value = calc.Sum("1500_000_000,1500_000_000");
+            Assert.That(value, Is.EqualTo(-1), "Wrong 0");
+        }
         [Test]
         public void SumTest1()
         {

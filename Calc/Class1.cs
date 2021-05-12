@@ -17,7 +17,7 @@ namespace KAICalc
                     string[] nums = s.Split(',');
 
                     if (nums.Length > 2) res = -1;
-                    else res = nums.Sum((x) => int.Parse(x));
+                    else res = checked(nums.Sum((x) => int.Parse(x)));
                 }
                 catch (Exception ex) { res = -1; }
             }
